@@ -2,15 +2,24 @@
   <div>
   	<h2>通过main.js注入jxzj-ui所引入的自定义组件</h2>
     <jxzj-button typeSwitch display></jxzj-button>
+    <jxzj-button typeSwitch display @change='handleSwitch' :activeValue='1' :inactiveValue='0' size='medium'></jxzj-button>  <!--开关-->
+    <jxzj-button :iconSrc='iconSrc' display></jxzj-button>  <!--图标按钮-->
+    <jxzj-button display>文字按钮</jxzj-button>  <!--文字按钮-->
+    <jxzj-button display plain>文字按钮</jxzj-button>  <!--白色文字按钮-->
+    <jxzj-button display plain addIcon>文字按钮</jxzj-button>  <!--白色文字按钮带图标-->
+    <jxzj-button display type='text'>文字按钮</jxzj-button>  <!--纯文字文本，可点击-->
   </div>
 </template>
 
 <script>
+  import iconSrc from '../assets/images/index/home_icon_jiazg.png'
   import { fenToYuan, yuanToFen} from '../jxzj-ui/utils/unitConversion.js'
   export default {
     name:'customizeComponent',
     data() {
-      return {}
+      return {
+        iconSrc
+      }
     },
     mounted:function() {
       // 直接当前文件引入的局部方法
@@ -36,9 +45,15 @@
 
       // 通过main.js引入的静态方法库
       console.log(this.JxzjUtils.formatDateTime(new Date(),'yyyy-MM-dd HH:mm:ss'))
+    },
+    methods:{
+      handleSwitch(val) {
+        console.log(val)
+      }
     }
   }
 </script>
 
 <style>
+  img{width:25px;}
 </style>
