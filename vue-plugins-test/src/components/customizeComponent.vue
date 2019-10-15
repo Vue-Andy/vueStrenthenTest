@@ -1,13 +1,12 @@
 <template>
   <div>
   	<h2>通过main.js注入jxzj-ui所引入的自定义组件</h2>
-    <jxzj-button typeSwitch display></jxzj-button>
     <jxzj-button typeSwitch display @change='handleSwitch' :activeValue='1' :inactiveValue='0' size='medium'></jxzj-button>  <!--开关-->
     <jxzj-button :iconSrc='iconSrc' display></jxzj-button>  <!--图标按钮-->
-    <jxzj-button display>文字按钮</jxzj-button>  <!--文字按钮-->
-    <jxzj-button display plain>文字按钮</jxzj-button>  <!--白色文字按钮-->
-    <jxzj-button display plain addIcon>文字按钮</jxzj-button>  <!--白色文字按钮带图标-->
-    <jxzj-button display type='text'>文字按钮</jxzj-button>  <!--纯文字文本，可点击-->
+    <jxzj-button display>文字按钮1</jxzj-button>  <!--文字按钮-->
+    <jxzj-button display plain>文字按钮2</jxzj-button>  <!--白色文字按钮-->
+    <jxzj-button display plain addIcon>文字按钮3</jxzj-button>  <!--白色文字按钮带图标-->
+    <jxzj-button display type='text'>文字按钮4</jxzj-button>  <!--纯文字文本，可点击-->
   </div>
 </template>
 

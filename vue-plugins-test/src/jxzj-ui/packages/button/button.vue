@@ -143,21 +143,21 @@
 
 <style scoped>
   .refresh {
-    color: $main;
+    color: #46A976;
     background: #FFFFFF;
-    border: 1px solid $main;
+    border: 1px solid #46A976;
   }
 
   .plainButton {
     border: none;
     background-color: white;
-    color: $main;
+    color: #46A976;
   }
 
   /deep/ .plainButton:hover {
     box-shadow: 1px 1px 1px 1px #aaaaaa;
     border: none;
-    color: $main;
+    color: #46A976;
   }
 
   /deep/ .plainButton.is-disabled:hover {
@@ -165,6 +165,6 @@
     box-shadow: none;
     background-color: white;
     cursor: not-allowed;
-    color: $main;
+    color: #46A976;
   }
 </style>
